@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- css -->
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- jquery -->
+    <script src="https://code.jquery.com/jquery-3.6.3.js"></script>
+    <script>
+      $(function(){
+        $('.ham').click(function(){
+          $('#categori').toggleClass('show')
+          $(this).toggleClass('active')
+        });
+      });
+    </script>
+</head>
+<body>
+  <!-- header -->
+    <header>
+        <h1 class="logo"><a href="index.html">seyeong</a></h1>
+        <div class="ham">
+          <span class="one"></span>
+          <span class="two"></span>
+          <span class="three"></span>
+        </div>
+      </header>
+      <!-- ham -->
+      <div id="categori" class="hidden">
+        <a href="https://www.notion.so/f1bfba2293834c279510c3276a62ef83" target="_blank">Resume</a>
+        <a href="./portfolio.html">Portfolio</a>
+      </div>
+      
+</body>
+</html>

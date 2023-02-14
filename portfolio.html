@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- css -->
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- jquery -->
+    <script src="https://code.jquery.com/jquery-3.6.3.js"></script>
+
+    <script>
+
+        $(document).ready(function(){
+            // header include
+            $("#includedContent").load("./header.html");
+            // 자세히 보기 클릭시 사라지고 하단에 닫기 생김
+            $(".more").click(function(){
+                $(".info").toggleClass("show")
+                $(".close").addClass("show")
+                $(this).addClass('hidden')
+                $(this).removeClass('show')
+            })
+            // 닫기 클릭시 자세히보기 보이고 닫기 사라짐
+            $(".close").click(function(){
+                $('.info').removeClass('show')
+                $(".more").toggleClass("show")
+                $(this).removeClass('show')
+                $('.more').addClass('hidden')
+            })
+        })
+    </script>
+</head>
+<body>
+    <div id="includedContent"></div>
+    <div id="wrap">
+        <h1 class="title">Portfolio</h1>
+        <button class="button more">자세히 보기</button>
+        <div id="pfs">
+            <div class="pf">
+                <img src="img/pf1.png" alt="루나브루 리디자인 반응형웹 ">
+                <div class="info hidden">
+                    <h2>01.루나브루 리디자인</h2>
+                    <p> <b>참여도</b> <br/> 개인(100%)</p>
+                    <p> <b>프로젝트 설명</b>  <br/> 사용자가 다양한 정보를 얻을수 있도록 <br/> 리디자인하여  작업한 모바일 반응형<br/>웹페이지 입니다.</p>
+                    <div class="link">
+                        <a href="https://ovenapp.io/view/64jT23Liv0oXcwHJOwl5MQ0Ev03WkMMg/" target="_blank">와이어프레임</a>
+                        <a href="https://www.figma.com/file/J7ldybFwoOpc6X9xRLffGE/Untitled?t=7KqtpuEDrNzmdTr8-1" target="_blank">figma</a>
+                    </div>
+                </div>
+            </div>
+            <div class="pf">
+                <img src="img/pf2.png" alt="현대건설 클론코딩">
+                <div class="info hidden">
+                    <h2>02.현대건설 메인페이지</h2>
+                    <p><b>참여도</b> <br/> 개인(100%)</p>
+                    <p><b>프로젝트 설명</b> <br/> 현대건설의 메인페이지를 Javascript없이 <br/> css애니메이션만 사용하여 작업한 <br/> 프로젝트입니다.</p>
+                    <div class="link">
+                        <a href="https://www.figma.com/file/FjGOKWnKRy5FxKEdyoGfN3/Untitled?node-id=0%3A1&t=9JBl9ejSY5dDcxzH-0" target="_blank">figma</a>
+                    </div>
+                </div>
+            </div>
+            <div class="pf">
+                    <img src="img/pf3.png" alt="개인포트폴리오">
+                <div class="info hidden">
+                    <h2>03.개인포트폴리오</h2>
+                    <p><b>참여도</b> <br/> 개인(100%)</p>
+                    <p><b>프로젝트 설명</b> <br/> 현재 보고 있는 사이트로 디자인부터 <br/> 구성까지 직접 제작한 포트폴리오 <br/> 사이트입니다. </p>
+                    <div class="link">
+                        <a href="https://www.figma.com/file/fPzWmSa2CRGSPRXewxTSE3/Untitled?node-id=0%3A1&t=H2mVy6mWMI8OPOgh-0" target="_blank">figma</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button class="button close hidden">닫기</button>
+    </div>
+</body>
+</html>
