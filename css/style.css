@@ -1,7 +1,9 @@
 * {
     font-family: 'Noto Sans KR', sans-serif;
 }
-
+body{
+    height:100%;
+}
 /* header */
 header {
     display: flex;
