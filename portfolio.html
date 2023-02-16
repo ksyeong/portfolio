@@ -30,6 +30,9 @@
                 $(this).removeClass('show')
                 $('.more').addClass('hidden')
             })
+            $('.pf').hover(function(){
+                $(this).children('.info').toggleClass('show')
+            })
         })
     </script>
 </head>
@@ -37,7 +40,7 @@
     <div id="includedContent"></div>
     <div id="wrap">
         <h1 class="title">Portfolio</h1>
-        <button class="button more">자세히 보기</button>
+        <button class="button more">한번에 보기</button>
         <div id="pfs">
             <div class="pf">
                 <img src="img/pf1.png" alt="루나브루 리디자인 반응형웹 ">
