@@ -140,7 +140,8 @@ header {
 /* pf */
 .title {
     text-align: center;
-    font-size: 24px;
+    font-size: 36px;
+    color: #F8ACAC;
     margin-bottom: 20px;
 }
 
@@ -154,8 +155,6 @@ header {
     justify-content: center;
     column-gap: 30px;
     row-gap: 30px;
-    width: 100%;
-    flex-wrap: wrap !important;
 }
 
 .pf {
