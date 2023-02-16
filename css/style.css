@@ -212,3 +212,11 @@ img {
 .link a:hover {
     color: #fc7d00;
 }
+
+/* footer */
+footer {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
