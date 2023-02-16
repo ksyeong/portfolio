@@ -144,19 +144,6 @@ header {
     margin-bottom: 20px;
 }
 
-.button {
-    display: block;
-    margin: 0 auto;
-    color: #FCC50F;
-    font-size: 18px;
-    margin-bottom: 30px;
-    cursor: pointer;
-}
-
-.more:hover {
-    color: #fc7d00;
-}
-
 #wrap {
     display: flex;
     flex-direction: column;
@@ -225,8 +212,4 @@ img {
 
 .link a:hover {
     color: #fc7d00;
-}
-
-.close {
-    margin-top: 50px;
 }
