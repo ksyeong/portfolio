@@ -213,6 +213,12 @@ img {
     color: #fc7d00;
 }
 
+.span {
+    text-align: right;
+    padding-top: 20px;
+    margin-right: 20px;
+}
+
 /* footer */
 footer {
     margin-top: 50px;
